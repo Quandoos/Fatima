@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الباقات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        h3 {
+            color: #0056b3;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 10px 0;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        .ul {
+            margin: 10px 0;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        label {
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 10px;
+            width: 20px; /* Increase size */
+            height: 20px; /* Increase size */
+        }
+
+        .price {
+            color: #d9534f;
+            font-weight: bold;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+		    .note {
+        background-color: #fff3cd; /* خلفية لون أصفر فاتح */
+        color: #856404; /* لون نص بني داكن */
+        border: 1px solid #ffeeba; /* إطار بلون أصفر فاتح */
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 18px; /* زيادة حجم الخط */
+        font-weight: bold; /* جعل النص عريض */
+        text-align: center; /* توسيط النص */
+    }
+	.album-list {
+        margin-bottom: 5px; /* تقليل المسافة بين العناصر */
+    }
+
+    .album-list li {
+        margin-bottom: 0; /* إزالة المسافة السفلية بين عناصر القائمة */
+    }
+    </style>
+</head>
+<body style="direction: rtl;">
+
+<div class="section">
+    <h1>الباقات الاساسية</h1>
+    <div>
+        <input type="radio" id="gold" name="fav_Package" value="Gold">
+        <label for="gold">الباقة الذهبية</label><br>
+        <div class="ul">
+            <ul>
+                <li>تصوير غير محدود من الصور للعرسـان والتفاصيل والأهل لمدة ساعة</li>
+                <li>25 صورة للعرسان مع التفاصيل معدلة ومطبوعة + صورتين عائلية</li>
+                <li><span class="price">السعر: 150 ريال سعودي</span></li>
+            </ul>
+        </div>
+        <input type="radio" id="silver" name="fav_Package" value="Silver">
+        <label for="silver">الباقة الفضية</label><br>
+        <div class="ul">
+            <ul>
+                <li>تصوير غير محدود من الصور للعرسـان والتفاصيل والأهل لمدة ساعة</li>
+                <li>15 صورة للعرسان مع التفاصيل معدلة ومطبوعة + صورتين عائلية</li>
+                <li><span class="price">السعر: 130 ريال سعودي</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h1>الخدمات الإضافية</h1>
+    <h3>تصوير الفيديو:</h3>
+    <form id="video-form">
+        <input type="checkbox" id="video_edited" name="video_service" value="Edited">
+        <label for="video_edited">فيديو التفاصيل للعرسان ( تصوير لمدة نصف ساعة ) </label><br>
+        <ul>
+            <li>تصوير الفستان + لبس الاكسسورات للعرسان + بخة العطر + البخور</li>
+			<li>وأي تفاصيل أُخرى للعرسان إن وجدت</li>
+            <li><span class="price">السعر: 40 ريال سعودي</span></li>
+        </ul>
+
+        <input type="checkbox" id="video_high_quality" name="video_service" value="High Quality">
+        <label for="video_high_quality">فيديو زفة العرسان ( تصوير لمدة نصف ساعة )</label><br>
+        <ul>
+            <li>تصور المسحة والفيست لوك إن وجد + الزفة + الرقص + تبديل الدبل والعصير والكيك</li>
+            <li><span class="price">السعر: 25 ريال سعودي</span></li>
+        </ul>
+    </form>
+</div>
+
+<div class="section">
+    <h3>الألبومات:</h3>
+    <form id="album-form">
+        <input type="checkbox" id="album_premium" name="album_service" value="Premium">
+        <label for="album_premium">ألبوم شبه حراري</label><br>
+        <ul class="album-list">
+            <li><span class="price">السعر: 70 ريال سعودي</span></li>
+        </ul><br>
+
+        <input type="checkbox" id="album_basic" name="album_service" value="Basic">
+        <label for="album_basic">الألبوم حلزون</label>
+        <ul class="album-list">
+            <li><span class="price">السعر: 20 ريال سعودي</span></li>
+        </ul>
+    </form>
+</div>
+<div class="section">
+<form class="note">
+ملاحظة : الأسعار غير شاملة المواصلات
+    </form>
+</div>
+</body>
+</html>
